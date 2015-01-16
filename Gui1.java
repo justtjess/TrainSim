@@ -6,11 +6,11 @@ public class Gui1 {
 public static void main (String[] args){
 	JFrame frame = new JFrame();
 	ImagePanel panel = new ImagePanel("train.jpg");
-	panel.setPreferredSize(new Dimension(400, 400));
+	panel.setPreferredSize(new Dimension(800, 600));
 	JButton start = new JButton("START");
 	panel.add(start);
 	frame.getContentPane().add(panel, BorderLayout.CENTER);
-	frame.setSize(400,400);
+	frame.setSize(800,600);
 	
 	// frame.getContentPane().add(start);
 	start.setFont(new Font( "Arial", Font.BOLD, 18));
