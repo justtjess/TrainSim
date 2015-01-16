@@ -21,6 +21,7 @@ public class Gui1 {
 	// 				new SecondFrame();
 				 start.setVisible(false);
 			// 	start.dispose();
+				frame.remove(panel);
 				ImagePanel panel2 = new ImagePanel("bg.jpg");
 				panel2.setPreferredSize(new Dimension(800, 600));
 				frame.getContentPane().add(panel2, BorderLayout.CENTER);
