@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Gui1 {
+public class Zoo{
 	public static void main (String[] args){
 		JFrame frame = new JFrame();
 		ImagePanel panel = new ImagePanel("train.jpg");
@@ -17,10 +17,10 @@ public class Gui1 {
 		start.setVisible(true);
 		start.addActionListener(new ActionListener(){
 				public void actionPerformed(ActionEvent ae) {
-					// frame.setVisible(false);
-	// 				new SecondFrame();
-				 start.setVisible(false);
-			// 	start.dispose();
+				// frame.setVisible(false);
+				//new SecondFrame();
+				start.setVisible(false);
+				//start.dispose();
 				frame.remove(panel);
 				ImagePanel panel2 = new ImagePanel("bg.jpg");
 				panel2.setPreferredSize(new Dimension(800, 600));
