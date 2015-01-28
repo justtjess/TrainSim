@@ -1,0 +1,21 @@
+<project default="compile">
+
+  <!-- build.xml for CS48
+       name: Felicia Truong -->
+       
+  <target name="compile" description="compile my code">
+  <javac srcdir="." destdir="." debug="true" debuglevel="lines,source" includeantruntime="false"/>                   
+  </target>
+
+   <target name="run" depends="compile" description="run the UCSBCourseTester program"> 
+    <java classname="UCSBCourseTester" classpath="." />
+  </target>
+
+<target name="clean" >
+    <delete failonerror="false" verbose="true">
+      <fileset dir="." includes="*.class"/>
+    </delete>
+    <delete dir="javadoc" quiet="true" />
+  </target>
+
+</project>
